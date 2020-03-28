@@ -1,0 +1,12 @@
+{
+  "success":{
+    "userid":1,
+    "username":"Harish Kumar",
+    "contactNumber":"+917455939876",
+    "address": "",
+    "useremail":"harry.10031988@gmail.com"
+  },
+  "failure":{
+    "message":"Failure Message Here."
+  }
+}

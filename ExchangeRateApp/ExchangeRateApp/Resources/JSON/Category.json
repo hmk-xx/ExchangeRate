@@ -1,0 +1,55 @@
+{
+  "categories":
+    [
+      {
+        "id": 1,
+        "name": "Cricket",
+        "imageurl": "https://www.pakistantribe.com/wp-content/uploads/2014/04/Cricket-Ball4.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Football",
+        "imageurl": "https://avante.biz/wp-content/uploads/Football-Wallpapers-Hd/Football-Wallpapers-Hd-017.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Basket Ball",
+        "imageurl": "https://www.pakistantribe.com/wp-content/uploads/2014/04/Cricket-Ball4.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Volley Ball",
+        "imageurl": "https://www.pakistantribe.com/wp-content/uploads/2014/04/Cricket-Ball4.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Hand Ball",
+        "imageurl": "https://www.pakistantribe.com/wp-content/uploads/2014/04/Cricket-Ball4.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Throw Ball",
+        "imageurl": "https://www.pakistantribe.com/wp-content/uploads/2014/04/Cricket-Ball4.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Skipping Rope",
+        "imageurl": "https://www.pakistantribe.com/wp-content/uploads/2014/04/Cricket-Ball4.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Knee Cap",
+        "imageurl": "https://www.pakistantribe.com/wp-content/uploads/2014/04/Cricket-Ball4.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Badminton",
+        "imageurl": "https://www.pakistantribe.com/wp-content/uploads/2014/04/Cricket-Ball4.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Elbow Cap",
+        "imageurl": "https://www.pakistantribe.com/wp-content/uploads/2014/04/Cricket-Ball4.jpg"
+      }
+    ]
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExchangeRateApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nz-Xg-VAj">
+                                <rect key="frame" x="20" y="82" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="eFM-OC-OMv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mKZ-bY-6nW"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-aW-IJO">
+                                <rect key="frame" x="20" y="84" width="374" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="smy-Ir-NQ6"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="selectFrom" destination="BYZ-38-t0r" eventType="touchUpInside" id="TlN-SN-EYa"/>
+                                </connections>
+                            </button>
+                            <tableView hidden="YES" clipsSubviews="YES" tag="111" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fNV-di-pRX">
+                                <rect key="frame" x="20" y="114" width="374" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="cZ2-N9-eYg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="M5g-3B-qCu"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Uqv-Fy-9dX"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" tag="222" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecG-ez-Ccp">
+                                <rect key="frame" x="20" y="245" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="fFZ-SI-UwA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="x3a-6u-hyI"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-nL-CNc">
+                                <rect key="frame" x="20" y="249" width="374" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YMc-uc-sJa"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="selecTo" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVG-hq-VsX"/>
+                                </connections>
+                            </button>
+                            <tableView hidden="YES" clipsSubviews="YES" tag="222" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RqD-bV-POf">
+                                <rect key="frame" x="20" y="280" width="374" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="gSQ-e4-5Zg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mTB-kN-pBM"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uUE-C9-0SC"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3Q-kU-KsS">
+                                <rect key="frame" x="20" y="615" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PES-bA-pPe">
+                                <rect key="frame" x="20" y="456" width="374" height="53"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="iol-yz-ag0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Conversion Rate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="convert" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nlp-dB-K24"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RFB-aW-IJO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1mK-1E-2zb"/>
+                            <constraint firstItem="c3Q-kU-KsS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="23x-da-8Yw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vwd-nL-CNc" secondAttribute="trailing" constant="20" id="3WY-sA-fCx"/>
+                            <constraint firstItem="fNV-di-pRX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="4IE-2W-wm3"/>
+                            <constraint firstItem="PES-bA-pPe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4jL-3F-608"/>
+                            <constraint firstItem="vwd-nL-CNc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="56s-uf-geb"/>
+                            <constraint firstItem="c3Q-kU-KsS" firstAttribute="top" secondItem="PES-bA-pPe" secondAttribute="bottom" constant="106" id="5CP-HQ-aFs"/>
+                            <constraint firstItem="ecG-ez-Ccp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Vc-4U-9Ya"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8nz-Xg-VAj" secondAttribute="trailing" constant="20" id="5hd-m6-6CZ"/>
+                            <constraint firstItem="RFB-aW-IJO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="JDj-kt-BlS"/>
+                            <constraint firstItem="PES-bA-pPe" firstAttribute="top" secondItem="RqD-bV-POf" secondAttribute="bottom" constant="48" id="NGe-bK-3qh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c3Q-kU-KsS" secondAttribute="trailing" constant="20" id="RJj-SX-OE0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ecG-ez-Ccp" secondAttribute="trailing" constant="20" id="Reu-dh-833"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PES-bA-pPe" secondAttribute="trailing" constant="20" id="Sn2-oP-8dH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RqD-bV-POf" secondAttribute="trailing" constant="20" id="TsG-pt-ISB"/>
+                            <constraint firstItem="RqD-bV-POf" firstAttribute="top" secondItem="ecG-ez-Ccp" secondAttribute="bottom" constant="1" id="XPe-x4-bCw"/>
+                            <constraint firstItem="ecG-ez-Ccp" firstAttribute="top" secondItem="fNV-di-pRX" secondAttribute="bottom" constant="3" id="bHF-3Z-G51"/>
+                            <constraint firstItem="8nz-Xg-VAj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="c2G-8v-fVx"/>
+                            <constraint firstItem="8nz-Xg-VAj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fmQ-qr-nP2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fNV-di-pRX" secondAttribute="trailing" constant="20" id="lav-oc-VGG"/>
+                            <constraint firstItem="vwd-nL-CNc" firstAttribute="top" secondItem="fNV-di-pRX" secondAttribute="bottom" constant="7" id="lbt-II-7Ii"/>
+                            <constraint firstItem="fNV-di-pRX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="p9x-c2-PIx"/>
+                            <constraint firstItem="RqD-bV-POf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qm2-za-3C3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RFB-aW-IJO" secondAttribute="trailing" constant="20" id="tpD-dI-Nli"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelResult" destination="c3Q-kU-KsS" id="Ox9-jF-l7g"/>
+                        <outlet property="tableviewConvertFrom" destination="fNV-di-pRX" id="Y6t-9M-xqh"/>
+                        <outlet property="tableviewConvertTo" destination="RqD-bV-POf" id="7Ls-8e-7pR"/>
+                        <outlet property="textFieldConvertFrom" destination="8nz-Xg-VAj" id="rBY-Bb-N7f"/>
+                        <outlet property="textFieldConvertTo" destination="ecG-ez-Ccp" id="AOD-Vq-obO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="121.875"/>
+        </scene>
+    </scenes>
+</document>
